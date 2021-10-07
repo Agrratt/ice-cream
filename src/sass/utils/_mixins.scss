@@ -1,0 +1,18 @@
+@mixin font($fz, $lh, $fw: 400, $ls: 0.04em) {
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
+
+@mixin flex-wrap-list() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--list-set-gap));
+  margin-top: calc(-1 * var(--list-set-gap));
+}
+
+@mixin list-set-gap() {
+  margin-left: var(--list-set-gap);
+  margin-top: var(--list-set-gap);
+}

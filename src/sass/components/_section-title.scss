@@ -1,0 +1,13 @@
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Titan One, cursive;
+  color: var(--section-title-text-color);
+  @include font(34px, 1.15);
+  @media screen and (min-width: 768px) {
+    @include font(48px, 1.15);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(58px, 1.14, 400, 0.06em);
+  }
+}
