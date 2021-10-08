@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --primary-text-color: #907e82;
+  --second-text-color: #000000;
+  --third-text-color: #ffffff;
+  --fourth-text-color: #ffa5ba;
+  --accent-color: #d41443;
+  --section-title-text-color: #d41443;
+  --main-bg-color: #e5e5e5;
+  --list-set-gap: 30px;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+body {
+  font-family: DM Sans, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--main-bg-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Titan One, cursive;
+  color: var(--section-title-text-color);
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 58px;
+    line-height: 1.14;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+  }
+}
+
+.about {
+  background-color: #fff5f6;
+}
+
+.label {
+  text-align: center;
+  font-family: Titan One, cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+/*# sourceMappingURL=main.css.map */
