@@ -24,7 +24,8 @@
 }
 
 .label {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 18px;
@@ -44,7 +45,7 @@
 }
 
 .about__text {
-  width: 220px;
+  max-width: 220px;
   margin: 0 auto;
 }
 
@@ -87,4 +88,8 @@
   // align-items: center;
   // text-align: center;
   color: #d41443;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
 }
