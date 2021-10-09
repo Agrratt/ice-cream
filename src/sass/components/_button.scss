@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 20px;
+  border: transparent;
+  cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--third-text-color);
+  transition: background-color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.button__icon {
+  fill: var(--accent-color);
+}
+
+.button__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  margin-right: 13.17px;
+}
+
+.button--reverse {
+  padding: 14px 16px;
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  transition: background-color var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+
+.button__icon--reverse {
+  fill: var(--third-text-color);
+}
