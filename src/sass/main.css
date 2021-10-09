@@ -121,6 +121,72 @@ img {
   }
 }
 
+.reviews {
+  background-color: white;
+}
+
+.reviews__container {
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+.reviews__img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+}
+
+.reviews__text-card {
+  padding-left: 77px;
+  padding-right: 86px;
+  padding-top: 43px;
+  padding-bottom: 26px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  color: black;
+  background-color: #fafafa;
+}
+
+.reviews__text {
+  background: repeating-linear-gradient(to bottom, transparent 0px, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
+  min-width: 157px;
+}
+
+.reviews__pagination {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.reviews__customer-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 52px;
+}
+
+.reviews__item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.reviews__home {
+  fill: #d31342;
+}
+
 .footer {
   background-color: #fff5f6;
 }
