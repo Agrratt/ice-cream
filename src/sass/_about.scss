@@ -7,7 +7,29 @@
   font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   text-transform: uppercase;
   color: #ffa5ba;
+}
+
+.first-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #000000;
+}
+
+.btn {
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border-width: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  color: #d41443;
 }
