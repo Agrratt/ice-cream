@@ -2,10 +2,9 @@
   background-color: #fff5f6;
   padding-top: 125px;
   background-image: url(../images/about/about-bg-mob-1x.png);
-  min-width: 320px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 100% 93%;
+  background-size: contain;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/about-bg-mob-2x.png);
   }
