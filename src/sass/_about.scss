@@ -140,25 +140,3 @@ img {
     margin-bottom: 45px;
   }
 }
-
-.btn {
-  width: 176px;
-  height: 44px;
-  margin-bottom: 39px;
-  background: #ffffff;
-  border-radius: 22px;
-  border-width: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  color: var(--accent-color);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background: #ecebeb;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 66px;
-  }
-}

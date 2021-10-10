@@ -3,7 +3,7 @@
     <div class="container">
         <span class="label">tradition and love</span>
         <h2 class="section-title">how it’s made?</h2>
-        <div class="about__block">
+        <div class="about__block wow slideInLeft">
             <picture>
                 <source srcset="././images/about/about-desc-1x.png 1x, ././images/about/about-desc-2x.png 2x" 
                     media="(min-width:1280px)">
@@ -19,10 +19,24 @@
                 <p class="about__second-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
                     Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
                 <p class="about__third-text">Aliquam erat volutpat. Aenean accumsan.</p>
-                <button class="btn">Read more</button>
+                <button type="submit" class="about__button button js-open-modal" data-modal="7">
+                    <span class="button__text"> Read more </span>
+                    <svg width="8" height="11" class="about__icon button__icon">
+                        <use href="././images/sprite.svg#icon-button"> </use>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
+
+    <div class="modal" data-modal="7">
+        <button type="button" class="modal__cross js-modal-close">
+            <svg class="modal__cross__icon" width="15" height="15">
+                <use href="././images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+
 </section>
 
 
