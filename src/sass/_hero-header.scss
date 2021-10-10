@@ -1,11 +1,17 @@
+// Header
 .header {
   background-color: #ffb8ca;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0;
-  padding-bottom: 0;
 }
+
+.header__thumb {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+  }
+}
+
 .header__navigation {
   display: flex;
   text-align: center;
@@ -13,30 +19,32 @@
   @media screen and (max-width: 1199px) {
     justify-content: space-between;
   }
-  @media screen and (min-width: 1200px) {
-    justify-content: center;
-  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 37px;
-  }
-  @media screen and (min-width: 480px) {
-    padding-top: 6px;
+    margin-left: auto;
+    margin-right: 30px;
   }
 }
+
+.header__logo-icon {
+  width: 50px;
+  height: 50px;
+}
+
 .header__logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  //   @media screen and (min-width: 1200px) {
-  //     padding-top: 37px;
-  //   }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -60px;
+  }
 }
 .header__logotip {
   font-family: Titan One;
   font-size: 25px;
   line-height: 1.13;
   letter-spacing: 0.04em;
-  margin-left: 10px;
+  margin-left: 20px;
   text-transform: uppercase;
   color: #d41443;
 }
@@ -44,14 +52,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //   padding-top: 50px;
-  margin-left: 110px;
+
   @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 .header__link-home {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -61,7 +68,7 @@
   color: #d41443;
 }
 .header__link {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
@@ -78,18 +85,17 @@
 .hero__button-type {
   width: 159px;
   height: 44px;
-  margin-left: 110px;
+
   background: #ffffff;
   border-radius: 22px;
-  font-family: DM Sans;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  border: none;
+
   color: #d41443;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -99,39 +105,22 @@
   fill: #d41443;
 }
 .header__menu {
-  //   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  padding: 0;
   background-color: transparent;
-  width: 20px;
-  height: 12px;
-  font-family: inherit;
+  border: none;
   cursor: pointer;
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1279px) {
     display: none;
   }
 }
 .header__menu-icon {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  display: block;
+  display: flex;
+  align-items: center;
+  height: 20px;
   cursor: pointer;
-  //   width: 20px;
-  //   height: 12px;
   fill: #d41443;
 }
-.menu-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 12px;
-  //   border: 1px solid #d41443;
-}
+
 .mobile {
   display: flex;
   align-items: center;
@@ -208,4 +197,426 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+// ---------------------------Hero---------------------------
+
+.header-hero {
+  &__thumb {
+    display: none;
+  }
+
+  &__ice-girl {
+    display: none;
+  }
+
+  &__right--first {
+    display: none;
+  }
+
+  &__circle--first {
+    display: none;
+  }
+
+  &__right--second {
+    display: none;
+  }
+  &__circle--second {
+    display: none;
+  }
+  &__substraite {
+    margin-top: 137px;
+    height: 150px;
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 160px;
+
+    @media screen and (max-width: 479px) {
+      overflow: hidden;
+    }
+  }
+
+  &__textcolor {
+    @include font(48px, 0.96, 400, 000.02em);
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  &__text-block {
+    position: absolute;
+    z-index: 901;
+  }
+
+  &__title {
+    font-size: 26px;
+    text-align: left;
+    color: #fff;
+  }
+
+  &__substraite::after {
+    position: absolute;
+    content: '';
+    width: 346px;
+    height: 344px;
+    background-color: #ffa5ba;
+    top: 83px;
+    left: 36px;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 117px;
+    z-index: 900;
+    width: 171px;
+    height: auto;
+  }
+
+  &__button-red {
+    margin-top: 20px;
+    padding: 7px 13px;
+    border-radius: 12px;
+    @include font(8px, 1.25);
+    border: 0;
+    background-color: #d41443;
+    color: #fff;
+  }
+
+  &__button-red:hover,
+  &__button-red:focus {
+    background-color: #c7133e;
+  }
+
+  &__button-white {
+    margin-top: 20px;
+    padding: 7px 11px;
+    border-radius: 12px;
+    @include font(8px, 1.25);
+    border: 0;
+    background-color: #ffffff;
+    margin-left: 4px;
+    color: #d41443;
+  }
+
+  &__button-white:hover,
+  &__button-white:focus {
+    background-color: #ecebeb;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 37px 15px 28px 15px;
+  }
+
+  .header-hero {
+    &__substraite {
+      margin-top: 15px;
+      height: 126px;
+    }
+
+    &__textcolor {
+      @include font(34px, 0.9);
+    }
+
+    &__title {
+      @include font(22px, 1.14);
+    }
+
+    &__milk-img {
+      height: 100%;
+    }
+
+    &__substraite::after {
+      top: 31px;
+      left: 283px;
+      width: 324px;
+      height: 324px;
+    }
+
+    &__image {
+      left: 354px;
+      width: 143px;
+    }
+
+    &__thumb {
+      display: block;
+      position: relative;
+      margin-top: 19px;
+      display: flex;
+      // width: 260px;
+    }
+
+    &__milk-text {
+      @include font(8px, 1.5);
+      color: #fff;
+      margin-top: 45px;
+      margin-left: -4px;
+    }
+
+    &__ice-girl {
+      display: block;
+      right: 5px;
+      position: absolute;
+      bottom: 0;
+      z-index: 905;
+      width: 168px;
+      height: auto;
+    }
+
+    &__right--first {
+      display: block;
+      width: 43px;
+      height: 44px;
+
+      top: 97px;
+      right: 5px;
+
+      @include font(28px, 1.14);
+      font-family: 'Titan One', sans-serif;
+      color: #d41443;
+      position: absolute;
+
+      z-index: 920;
+    }
+
+    &__right--first::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+
+      position: absolute;
+      top: -3px;
+      right: 0;
+
+      z-index: -1;
+    }
+
+    &__text--first {
+      display: block;
+      font-family: 'DM Sans';
+      @include font(8px, 1.25);
+      color: #fff;
+      position: absolute;
+      top: 31px;
+      right: 10px;
+    }
+
+    &__right--second {
+      display: block;
+      width: auto;
+      height: 44px;
+      padding-right: 8px;
+
+      top: 153px;
+      right: 3px;
+
+      @include font(28px, 1.14);
+      font-family: 'Titan One', sans-serif;
+      color: #d41443;
+      position: absolute;
+
+      z-index: 920;
+    }
+
+    &__right--second::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+
+      position: absolute;
+      top: -2px;
+      right: 2px;
+
+      z-index: -1;
+    }
+
+    &__text--second {
+      font-family: 'DM Sans';
+      @include font(8px, 1.25, 400, 00.04em);
+      color: #fff;
+      position: absolute;
+      top: 31px;
+      right: 10px;
+      // width: 43px;
+    }
+  }
+
+  .products__icon {
+    width: 6px;
+    height: 5px;
+  }
+
+  .products__button {
+    position: absolute;
+    left: 120px;
+    top: 100px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    fill: #d41443;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #fff;
+    transition: background-color var(--timing-function) var(--duration);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    overflow: visible;
+    padding: 37px 15px 45px 15px;
+  }
+
+  .header-hero {
+    &__substraite {
+      margin-top: 84px;
+      height: 209px;
+    }
+
+    &__title {
+      @include font(38px, 1.16);
+    }
+
+    &__textcolor {
+      @include font(58px, 0.8, 400, 000.04em);
+    }
+
+    &__milk-img {
+      margin-left: -39px;
+      width: 188px;
+      height: 191px;
+    }
+
+    &__substraite::after {
+      top: 52px;
+      left: 360px;
+      width: 538px;
+      height: 538px;
+    }
+
+    &__image {
+      left: 479px;
+      width: 236px;
+    }
+
+    &__thumb {
+      margin-top: 49px;
+    }
+
+    &__milk-text {
+      @include font(14px, 1.4);
+      margin-top: 56px;
+      width: 200px;
+      height: 78px;
+      margin-left: 30px;
+    }
+
+    &__ice-girl {
+      right: 10px;
+      width: 293px;
+    }
+
+    &__right--first {
+      width: 72px;
+      height: 77px;
+
+      top: 159px;
+      right: -4px;
+
+      @include font(46px, 1.2);
+    }
+
+    &__text--first {
+      @include font(14px, 1.3);
+      top: 56px;
+      right: 18px;
+    }
+
+    &__right--second {
+      height: 76px;
+      padding-right: 18px;
+
+      top: 251px;
+      right: -4px;
+
+      @include font(46px, 1.2);
+    }
+
+    &__text--second {
+      @include font(14px, 1.3);
+      top: 56px;
+      right: 14px;
+      width: 80px;
+    }
+
+    &__button-red {
+      margin-top: 21px;
+      padding: 11px 20.5px;
+      border-radius: 20px;
+      @include font(14px, 1.3);
+    }
+
+    &__button-white {
+      margin-top: 21px;
+      padding: 11px 16.5px;
+      border-radius: 20px;
+      @include font(14px, 1.3);
+      border: 0;
+      background-color: #ffffff;
+      margin-left: 10px;
+      color: #d41443;
+    }
+    &__right--first::before {
+      width: 30px;
+      height: 30px;
+
+      top: -2px;
+      right: 2px;
+
+      z-index: -1;
+    }
+
+    &__right--second::before {
+      width: 30px;
+      height: 30px;
+
+      top: -2px;
+      right: 2px;
+
+      z-index: -1;
+    }
+  }
+  .products__icon {
+    width: 9px;
+    height: 9px;
+  }
+  .products__button {
+    align-items: center;
+    left: 180px;
+    top: 154px;
+
+    width: 26px;
+    height: 26px;
+  }
 }
