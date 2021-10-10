@@ -78,14 +78,6 @@
         padding-top: 152px;
         padding-left: 11px;
         padding-right: 11px;
-        // width: 220px;
-        // margin-left: 0;
-        // margin-right: 0;
-        // &:nth-child(-n + 2) {
-        //     margin-bottom: 0;
-        // }
-        // &:not(:last-child) {
-        //  margin-right: 20px;
         flex-basis: calc(100% / 3 - 20px);
         margin-left: 20px;    
     }
@@ -98,9 +90,6 @@
         height: 525px;
         flex-basis: calc(100% / 3 - 30px);
         margin-left: 30px;
-        // &:not(:last-child) {
-        //     margin-right: 30px;
-        // }
     }
 }
 
@@ -281,7 +270,8 @@
     border: 0;
     background-color: #fff;
     transition: background-color var(--timing-function) var(--duration);
-
+    cursor: pointer;
+    
     &:hover,
     &:focus {
         background-color: #ECEBEB;
@@ -291,3 +281,76 @@
 .products__icon {
     fill: #D41443;
 }
+
+.products__modal {    
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    width: 300px;
+    height: 300px;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    border-radius: 24px;
+
+    @media screen and (min-width: 460px) {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.products__modal--ice-cream {
+    background-image: 
+    url("../images/products/ice-cream-max.png");
+    background-color: #e4bbc5;
+
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url("../images/products/ice-cream-max2.png");
+    }
+}
+
+.products__modal--ice-coffee {
+    background-image: 
+    url("../images/products/ice-coffee-max.png");
+    background-color: #d5bb98;
+
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url("../images/products/ice-coffee-max2.png");
+    }
+}
+
+.products__modal--milkshakes {
+    background-image: 
+    url("../images/products/milkshakes-max.png");
+    background-color: #86986f;
+
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url("../images/products/milkshakes-max2.png");
+    }
+}
+
+.products__modal-text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+
+    @media screen and (min-width: 460px) {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.76;
+    }
+}
+
