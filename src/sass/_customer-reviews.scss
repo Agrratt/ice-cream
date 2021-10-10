@@ -16,32 +16,52 @@
   padding-top: 43px;
   padding-bottom: 26px;
   text-align: center;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 255%;
+
   color: black;
   background-color: #fafafa;
+
+  &::after {
+    content: '';
+    background-image: url('../images/red-dots.svg');
+  }
+}
+.reviews__gradient {
+  background-image: repeating-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0) 28px,
+    #e1e1e1 0,
+    #e1e1e1 29px
+  );
+  background-position-x: 41px;
+  // background-position-y: 30px;
 }
 .reviews__text {
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 30px,
-    #e1e1e1 30px,
-    #e1e1e1 31px
-  );
   min-width: 157px;
   position: relative;
 
-  //   &:before {
-  //     position: absolute;
-  //     display: block;
-  //     content: ' ';
-  //     background-image: url('../images/sprite-reviews.svg#icon-review-mark');
-  //     fill: #e1e1e1;
-  //     height: 40px;
-  //     width: 54px;
-  //   }
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    background-image: url('../images/mark.svg');
+    fill: #e1e1e1;
+  }
 }
 .reviews__pagination {
   text-decoration: none;
