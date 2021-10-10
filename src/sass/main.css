@@ -343,7 +343,7 @@ img {
   top: 0;
   right: 0;
   padding: 23px 20px 0px 21px;
-  background-color: #e18298;
+  background-color: #e17992;
   -webkit-filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 }
@@ -376,5 +376,47 @@ img {
   font-family: inherit;
   cursor: pointer;
   fill: #ffffff;
+}
+
+.header__mobilemenu-button {
+  width: 209px;
+  height: 44px;
+  margin-top: 23px;
+  margin-bottom: 19px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #d41443;
+}
+
+.header__mobilemenu-link-home {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d41443;
+}
+
+.header__mobilemenu-item::before {
+  content: '';
+  border: 1px solid #e18298;
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
