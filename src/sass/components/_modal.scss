@@ -21,7 +21,6 @@
   visibility: hidden;
 
   width: 100%;
-  max-width: 500px;
 
   position: fixed;
   top: 50%;
@@ -39,9 +38,22 @@
     opacity: 1;
     visibility: visible;
   }
+
+  @media screen and (min-width: 480px) {
+    max-width: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1000px;
+  }
 }
 
 .modal__cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   position: absolute;
