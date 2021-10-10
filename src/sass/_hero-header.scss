@@ -1,0 +1,208 @@
+.header {
+  background-color: #ffb8ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header__navigation {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  @media screen and (max-width: 1199px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-top: 6px;
+  }
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   @media screen and (min-width: 1200px) {
+  //     padding-top: 37px;
+  //   }
+}
+.header__logotip {
+  font-family: Titan One;
+  font-size: 25px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   padding-top: 50px;
+  margin-left: 110px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.header__link-home {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  color: #d41443;
+}
+.header__link {
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.header__item {
+  .header__list &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+.hero__button-type {
+  width: 159px;
+  height: 44px;
+  margin-left: 110px;
+  background: #ffffff;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.hero__button-icon {
+  width: 4px;
+  height: 8px;
+  fill: #d41443;
+}
+.header__menu {
+  //   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 20px;
+  height: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header__menu-icon {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  display: block;
+  cursor: pointer;
+  //   width: 20px;
+  //   height: 12px;
+  fill: #d41443;
+}
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 12px;
+  //   border: 1px solid #d41443;
+}
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__mobilemenu {
+  position: relative;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  padding: 23px 20px 0px 21px;
+  background-color: #e17992;
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header__mobilemenu-close {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  margin-bottom: 23px;
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  fill: #ffffff;
+}
+.header__mobilemenu-button {
+  width: 209px;
+  height: 44px;
+  margin-top: 23px;
+  margin-bottom: 19px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+}
+.header__mobilemenu-link-home {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  color: #d41443;
+}
+.header__mobilemenu-item::before {
+  content: '';
+  border: 1px solid #e18298;
+  max-width: 100%;
+}
+
+// Скрыть мобильное меню
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
