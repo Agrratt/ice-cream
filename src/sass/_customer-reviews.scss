@@ -3,7 +3,6 @@
 }
 .reviews__container {
   padding-top: 80px;
-  padding-bottom: 86px;
 }
 .reviews__img img {
   display: block;
@@ -32,6 +31,17 @@
     #e1e1e1 31px
   );
   min-width: 157px;
+  position: relative;
+
+  //   &:before {
+  //     position: absolute;
+  //     display: block;
+  //     content: ' ';
+  //     background-image: url('../images/sprite-reviews.svg#icon-review-mark');
+  //     fill: #e1e1e1;
+  //     height: 40px;
+  //     width: 54px;
+  //   }
 }
 .reviews__pagination {
   text-decoration: none;
