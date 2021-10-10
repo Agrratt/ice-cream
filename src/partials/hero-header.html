@@ -1,44 +1,88 @@
 <header class="header">
-      <div class="container">
-      <nav class="header__navigation">
+      <div class="header-hero__container container">
+        <div class="header__thumb">
           <a class="header__logo link" href="">
-            <svg class="header__logo-icon" width="40" height="50"> 
-        <use class="header__logo-icon-logo" href="././images/sprite.svg#icon-logo"> 
-      </svg><span class="header__logotip">ICECREAM</span>
-      </a
-    >
-    <ul class="header__list list">
-      <li class="header__item">
-        <a class="header__link-home link" href="">Home</a>
-      </li>
-      <li class="header__item">
-        <a class="header__link link" href="">About us</a>
-      </li>
-      <li class="header__item">
-        <a class="header__link link" href="">How it’s made?</a>
-      </li>
-      <li class="header__item">
-        <a class="header__link link" href="">Our products</a>
-      </li>
-      <li class="header__item">
-        <a class="header__link link" href="">Contact</a>
-      </li>
-    </ul>
+            <svg class="header__logo-icon"> 
+        <use href="././images/sprite.svg#icon-logo"> 
+      </svg>
+      <span class="header__logotip">icecream</span>
+      </a>
+    <nav class="header__navigation">
+      <ul class="header__list list">
+        <li class="header__item">
+          <a class="header__link-home link" href="">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="">About us</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="">How it’s made?</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="">Our products</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="">Contact</a>
+        </li>
+      </ul>
     <button class="header__menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="20" height="12"
-            class="header__menu-icon"
-                       aria-label="Переключатель мобильного меню">
-            <use class="menu-icon" href="././images/sprite.svg#icon-burgernew-new"></use>
-          </svg>
-        </button>
-              <button class="hero__button-type" type="button">
-        Buy now
+      <svg class="header__menu-icon" aria-label="Переключатель мобильного меню"
+      
+      width="20"
+      heightr="12">
+
+          <use href="./images/sprite.svg#icon-burgernew-new"></use>
+      </svg>
     </button>
-      <!-- <svg class="hero__button-icon" width="4" height="8">
-        <use class="hero__button-icon-right-side" href="././images/sprite.svg#icon-right-side"></use>
-      </svg> -->
-         </nav>
+    </nav>
+    <button class="hero__button-type" type="button">
+      Buy now
+    </button>
+    </div>
+            <!------------------------ HERO  -------------------------->
+          <div class="header-hero__substraite">
+            <div class="header-hero__text-block">
+              <h1 class="header-hero__title section-title">ice cream <br> made with <br><span
+                  class="header-hero__textcolor">passion</span></h1>
+              <button type="button" class="header-hero__button-red">Products</button>
+              <button type="button" class="header-hero__button-white">How it's made?</button>
+            </div>
+          </div>
+          <img alt="ice-cream" class="header-hero__image" src="./images/favicon/hero-ice-cream-171px.png" srcset="
+
+                  ./images/favicon/hero-ice-cream-171px.png 171w, 
+                  ./images/favicon/hero-ice-cream-342px.png 342w,
+                  ./images/favicon/hero-ice-cream-472px.png 472w
+
+                  " sizes="(min-width: 1280px) 20vw, (min-width: 768px) 20vw, (max-width: 767px) 40vw">
+          <div class="header-hero__thumb">
+            <img src="./images/favicon/milk-cont-124px.png" alt="container with milk" class="header-hero__milk-img" srcset="
+                      ./images/favicon/milk-cont-124px.png 124w,
+                      ./images/favicon/milk-cont-248px.png 248w,
+                      ./images/favicon/milk-cont-376px.png 376w" sizes="(min-width: 1280px) 15vw, (min-width: 768px) 16vw">
+            <span class="header-hero__milk-text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod
+              tempor <br> incididunt ut labore et</span>
+            <button class="products__button" type="button">
+              <svg class="header-hero__icon">
+                <use class="products__svg" href="././images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <img src="./images/favicon/hero-ice-girl-168px.png" alt="girl with ice-cream" srcset="
+                  ./images/favicon/hero-ice-girl-168px.png 168w,
+                  ./images/favicon/hero-ice-girl-336px.png 336w,
+                  ./images/favicon/hero-ice-girl-586px.png 586w" sizes="(min-width: 1280px) 23vw, (min-width: 768px) 22vw"
+            class="header-hero__ice-girl">
+          <div class="header-hero__right--first">
+            16
+            <span class="header-hero__text--first">cafes</span>
+          </div>
+          <div class="header-hero__right--second">
+            23
+            <span class="header-hero__text--second">food&nbsptracks</span>
+          </div>
          </div>
+        <!-------------------- MODAL -------------------->
          <div class="header__backdrop is-hidden">
              <div class="header__mobilemenu">
                  <button type="button" class="header__mobilemenu-close">
@@ -68,7 +112,5 @@
         </li>
     </ul>
                 </div>
-
-
          </div>
  </header>
