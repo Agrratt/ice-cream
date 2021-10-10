@@ -162,6 +162,9 @@
   font-size: 16px;
   line-height: 1.31;
   border: none;
+
+  cursor: pointer;
+
   margin-right: -10px;
 
   transition: background-color var(--timing-function) var(--duration);
@@ -180,11 +183,6 @@
 .hero__button-type:hover {
   background-color: #ecebeb;
 }
-.hero__button-icon {
-  width: 4px;
-  height: 8px;
-  fill: #d41443;
-}
 .header__menu {
   background-color: transparent;
   border: none;
@@ -194,6 +192,7 @@
     display: none;
   }
 }
+// ------------------------ BURGER  --------------------------
 .header__menu-icon {
   display: flex;
   align-items: center;
@@ -201,27 +200,32 @@
   cursor: pointer;
   fill: #d41443;
 }
-
+// ------------------------ Мщбильное меню  --------------------------
 .mobile {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .header__mobilemenu {
-  position: relative;
   width: 250px;
   height: 100vh;
   position: fixed;
   z-index: 999;
-  background-color: #ffffff;
+  padding-top: 23px;
   top: 0;
   right: 0;
-  padding: 23px 20px 0px 21px;
+  transform: translateX(100%);
   background-color: #e17992;
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
-  @media screen and (min-width: 1279px) {
+
+  transition: transform var(--duration) var(--timing-function);
+  @media screen and (min-width: 1200px) {
+
     display: none;
   }
+}
+.header__mobilemenu.is-open {
+  transform: translateX(0);
 }
 .header__mobilemenu-close {
   position: absolute;
@@ -232,7 +236,6 @@
   justify-content: center;
   border: none;
   padding: 0;
-  margin-bottom: 23px;
   background-color: transparent;
   width: 14px;
   height: 14px;
@@ -245,7 +248,9 @@
   height: 44px;
   margin-top: 23px;
   margin-bottom: 19px;
-  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
   border-radius: 22px;
   border: none;
   font-family: DM Sans;
@@ -255,30 +260,71 @@
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  cursor: pointer;
   color: #d41443;
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
 }
 .header__mobilemenu-link-home {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
+  margin-left: 21px;
   display: flex;
   align-items: center;
   color: #d41443;
 }
-.header__mobilemenu-item::before {
-  content: '';
-  border: 1px solid #e18298;
-  max-width: 100%;
+.header__mobilemenu-link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-left: 21px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
+.header__mobilemenu-item {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 42px;
+  border: 1px solid #e18298;
+}
+// .header__mobilemenu-item::before {
+//   content: '';
+//   border: 1px solid #e18298;
+//   max-width: 100%;
+// }
 
 // Скрыть мобильное меню
+// .header__backdrop {
+//   position: fixed;
+//   height: 100vh;
+//   width: 100vw;
+//   top: 0;
+//   overflow-y: scroll;
+//   z-index: 999;
+//   background-color: rgba(23, 26, 36, 0.2);
+//   transition: opacity var(--time) var(--timing-function),
+//     visibility var(--time) var(--timing-function);
+// }
+// .header__backdrop {
+//   &.is-hidden {
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+//   }
+// }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
 // ---------------------------Hero---------------------------
 
 .header-hero {

@@ -26,7 +26,8 @@
           <a class="header__link link" href="">Contact</a>
         </li>
       </ul>
-    <button class="header__menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <!------------------------ BURGER  -------------------------->
+    <button class="header__menu js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="header__menu-icon" aria-label="Переключатель мобильного меню"
       
       width="20"
@@ -36,18 +37,15 @@
       </svg>
     </button>
     </nav>
-    </div>
+
+    <!------------------------ BUTTON WITH ICON  -------------------------->
     <button class="hero__button-type" type="button">
-      Buy now
-      <svg class="header__icon-right"
+      <span class="button__text">Buy now</span>
+      <svg width="8" height="11" class="hero__button-icon button__icon ">
+          <use href="././images/sprite.svg#icon-button"> </use>
+        </svg>
       
-      width="8"
-      height="11"
-      
-      >
-      
-        <use href="./images/sprite.svg#icon-button"></use>
-      </svg>
+
     </button>
     </div>
             <!------------------------ HERO  -------------------------->
@@ -94,20 +92,25 @@
           </div>
          </div>
         <!-------------------- MODAL -------------------->
-         <div class="header__backdrop is-hidden">
-             <div class="header__mobilemenu">
-                 <button type="button" class="header__mobilemenu-close">
+         <!-- <div class="header__backdrop  is-hidden"> -->
+             <div class="header__mobilemenu js-menu-container" id="mobile-menu">
+                 <button type="button" class="header__mobilemenu-close js-close-menu">
                      <svg width="14" height="14"
             class="header__mobilemenu-icon"
                        aria-label="Переключатель мобильного меню">
             <use class="menu-icon-close" href="././images/sprite.svg#icon-close"></use>
           </svg>
                  </button>
-                 <button type="button" class="header__mobilemenu-button">Buy now</button>
+                <button class="header__mobilemenu-button" type="button">
+      <span class="button__text">Buy now</span>
+      <svg width="8" height="11" class="hero__button-icon button__icon ">
+          <use href="././images/sprite.svg#icon-button"> </use>
+        </svg>
+      </button>
 
     <ul class="header__mobilemenu-list list">
         <li class="header__mobilemenu-item">
-            <a class="header__mobilemenu-link-home link" href="">Home</a>
+            <a class="header__mobilemenu-link link" href="">Home</a>
         </li>
         <li class="header__mobilemenu-item">
             <a class="header__mobilemenu-link link" href="">About us</a>
@@ -123,5 +126,5 @@
         </li>
     </ul>
                 </div>
-         </div>
+         <!-- </div> -->
  </header>
