@@ -5,25 +5,29 @@
     <ul class="contacts__list list">
       <li class="contacts__item">
 
-        <span class="contacts__name">CAFE</span>
+        <div class="contacts__field">
+          <span class="contacts__name">CAFE</span>
+        </div>
 
         <span class="contacts__city">Chicago</span>
 
         <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
 
-        <span class="contacts__day">Monday - Friday</span>
+        <div class="contacts__schedule">
+          <span class="contacts__day">Monday - Friday</span>
 
-        <p class="contacts__time">06:00 AM - 10:00 PM</p>
+          <p class="contacts__time">06:00 AM - 10:00 PM</p>
 
-        <span class="contacts__day">Saturday - Sunday</span>
+          <span class="contacts__day">Saturday - Sunday</span>
+        
+          <p class="contacts__time ">08:00 AM - 16:00 PM</p>
+        </div>
 
-        <p class="contacts__time">08:00 AM - 16:00 PM</p>
-
-        <a href="tel:+61(0) 383 766 284" class="contacts__tel">
+        <a href="tel:+61(0)383766284" class="contacts__tel link">
           +61(0) 383 766 284
         </a>
 
-        <a href="mailto:noreply@envato.com" class="contacts__email">
+        <a href="mailto:noreply@envato.com" class="contacts__email link">
           noreply@envato.com
         </a>
 
@@ -31,59 +35,86 @@
 
       <li class="contacts__item">
 
-        <span class="contacts__name">FOOD TRUCK</span>
-        
+        <div class="contacts__field contacts__field--green">
+          <span class="contacts__name">FOOD TRUCK</span>
+        </div>
+
         <span class="contacts__city">Los Angeles</span>
         
         <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        
-        <span class="contacts__day">Monday - Friday</span>
-        
-        <p class="contacts__time">06:00 AM - 10:00 PM</p>
-        
-        <span class="contacts__day">Saturday - Sunday</span>
-        
-        <p class="contacts__time">08:00 AM - 16:00 PM</p>
-        
-        <a href="tel:+61(0) 383 766 284 " class="contacts__tel">
+
+        <div class="contacts__schedule">
+          <span class="contacts__day">Monday - Friday</span>
+            
+          <p class="contacts__time">06:00 AM - 10:00 PM</p>
+            
+          <span class="contacts__day">Saturday - Sunday</span>
+            
+          <p class="contacts__time ">08:00 AM - 16:00 PM</p>
+        </div>
+
+        <a href="tel:+61(0)383766284 " class="contacts__tel link">
           +61(0) 383 766 284
         </a>
         
-        <a href="mailto:noreply@envato.com" class="contacts__email">
+        <a href="mailto:noreply@envato.com" class="contacts__email link">
           noreply@envato.com
         </a>
 
       </li>
-      <li class="contacts__item">
+      <li class="contacts__item ">
 
-        <span class="contacts__name">CAFE</span>
-        
+        <div class="contacts__field">
+          <span class="contacts__name">CAFE</span>
+        </div>
+
         <span class="contacts__city">New York</span>
         
         <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
         
-        <span class="contacts__day">Monday - Friday</span>
-        
-        <p class="contacts__time">06:00 AM - 10:00 PM</p>
-        
-        <span class="contacts__day">Saturday - Sunday</span>
-        
-        <p class="contacts__time">08:00 AM - 16:00 PM</p>
-        
-        <a href="tel:+61(0) 383 766 284 " class="contacts__tel">
+        <div class="contacts__schedule">
+          <span class="contacts__day">Monday - Friday</span>
+            
+          <p class="contacts__time">06:00 AM - 10:00 PM</p>
+            
+          <span class="contacts__day">Saturday - Sunday</span>
+            
+          <p class="contacts__time ">08:00 AM - 16:00 PM</p>
+        </div>
+
+        <a href="tel:+61(0)383766284 " class="contacts__tel link">
           +61(0) 383 766 284
         </a>
         
-        <a href="mailto:noreply@envato.com" class="contacts__email">
+        <a href="mailto:noreply@envato.com" class="contacts__email link">
           noreply@envato.com
         </a>
         
       </li>
     </ul>
+    <div class="contacts__button-flex">
+      <button type="submit" class="contacts__button contacts__button--reverse button button--reverse js-open-modal" data-modal="1">
+        <span class="button__text "> Our Locations </span>
+        <svg width="8" height="11" class="contacts__icon  button__icon button__icon--reverse">
+          <use href="././images/sprite.svg#icon-button"></use>
+        </svg>
+      </button>
+      <button type="submit" class="contacts__button button ">
+        <span class="button__text"> Franchise </span>
+        <svg width="8" height="11" class="contacts__icon button__icon ">
+          <use href="././images/sprite.svg#icon-button"> </use>
+        </svg>
+      </button>
+    </div>
+  </div>
 
-    <button type="submit">Our Locations</button>
-    <button type="submit">Franchise</button>
-
+  <div class="modal" data-modal="1">
+    <button type="button" class="modal__cross js-modal-close">
+      <svg class="modal__cross_icon " width="15" height="15">
+        <use href="././images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
   </div>
 
 </section>
+
