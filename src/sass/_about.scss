@@ -140,3 +140,35 @@ img {
     margin-bottom: 45px;
   }
 }
+
+.about__modal {
+  background-color: #fff5f6;
+}
+
+.about__modal-block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.about__modal-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--primary-text-color);
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-bottom: 15px;
+    max-width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.94;
+    margin-bottom: 25px;
+  }
+}
