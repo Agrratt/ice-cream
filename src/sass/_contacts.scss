@@ -258,3 +258,132 @@
     padding: 10px 35px 10px 35px;
   }
 }
+
+/*Modal*/
+
+.modal-franchise {
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, var(--third-text-color), #fff5f6);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: stretch;
+    margin: -10px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 50px;
+    margin: -20px;
+  }
+}
+
+.modal-franchise__address--border {
+  padding: 10px 0;
+  @media screen and (max-width: 767px) {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding: 15px 0;
+  }
+}
+
+.modal-franchise__address {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 40px);
+    margin: 20px;
+    padding: 15px;
+  }
+}
+
+.modal-franchise__address:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+
+.modal-franchise__item {
+  text-align: left;
+
+  &:not(:last-child) {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.modal-franchise__item--background {
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #f0d1a5;
+  @media screen and (min-width: 768px) {
+    width: 140px;
+    margin-bottom: 20px;
+  }
+}
+
+.modal-franchise__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.83;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.88;
+  }
+}
+
+.modal-franchise__link {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.83;
+
+  color: var(--primary-text-color);
+
+  transition: color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--fourth-text-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.modal-locations {
+  padding: 5px;
+}
+
+.modal-locations__button {
+  top: 10px;
+  right: 10px;
+}
+
+.modal-locations__map {
+  width: 100%;
+}
