@@ -16,6 +16,14 @@
     background-size: contain;
     background-position: 0 40%;
   }
+  @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: url(../images/bg-contacts2x.png),
+      linear-gradient(to bottom, var(--third-text-color) 234px, #fff5f6 234px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 40%;
+  }
 }
 
 .contacts__list {
@@ -42,9 +50,20 @@
   background-color: var(--third-text-color);
   padding: 43px 21px 43px 20px;
   border-radius: 24px;
-  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 
   width: 220px;
+  transition: box-shadow var(--duration) var(--timing-function);
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  }
+
   @media screen and (min-width: 768px) {
     padding: 50px 32px 50px 31px;
     flex-basis: calc(100% / 3 - 20px);
@@ -56,10 +75,9 @@
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 20px;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
     }
   }
 }
