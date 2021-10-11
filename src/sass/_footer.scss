@@ -179,3 +179,41 @@
     display: block;
   }
 }
+
+.footer__modal {
+  background-color: #ffb8ca;
+}
+
+.footer__modal--content {
+  margin-top: 20px;
+  background-image: url('../images/footer/milk-1-min.jpg');
+  background-repeat: no-repeat;
+  background-color: #ffb8ca;
+  background-size: cover;
+  border-radius: 25px;
+  background-position: center;
+}
+
+.footer__modal-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Titan One, cursive;
+  color: var(--section-title-text-color);
+  @include font(34px, 1.15);
+}
+
+.footer__modal-toptext {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.62;
+  text-shadow: var(--accent-color) 2px 2px;
+  color: var(--third-text-color);
+  margin-bottom: 25px;
+}
+.footer__modal-bottomtext {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.62;
+  text-shadow: var(--primary-text-color) 1px 1px;
+  color: var(--accent-color);
+}
