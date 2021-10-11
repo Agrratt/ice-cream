@@ -163,9 +163,7 @@
   font-size: 16px;
   line-height: 1.31;
   border: none;
-
-  cursor: pointer;
-
+  vertical-align: middle;
   margin-right: -10px;
 
   transition: background-color var(--timing-function) var(--duration);
@@ -184,6 +182,11 @@
 .hero__button-type:hover {
   background-color: #ecebeb;
 }
+.hero__button-icon {
+  width: 4px;
+  height: 8px;
+  fill: #d41443;
+}
 .header__menu {
   background-color: transparent;
   border: none;
@@ -193,7 +196,6 @@
     display: none;
   }
 }
-// ------------------------ BURGER  --------------------------
 .header__menu-icon {
   display: flex;
   align-items: center;
@@ -201,7 +203,7 @@
   cursor: pointer;
   fill: #d41443;
 }
-// ------------------------ Мщбильное меню  --------------------------
+//
 .mobile {
   display: flex;
   align-items: center;
@@ -221,7 +223,6 @@
 
   transition: transform var(--duration) var(--timing-function);
   @media screen and (min-width: 1200px) {
-
     display: none;
   }
 }
@@ -295,37 +296,7 @@
   height: 42px;
   border: 1px solid #e18298;
 }
-// .header__mobilemenu-item::before {
-//   content: '';
-//   border: 1px solid #e18298;
-//   max-width: 100%;
-// }
 
-// Скрыть мобильное меню
-// .header__backdrop {
-//   position: fixed;
-//   height: 100vh;
-//   width: 100vw;
-//   top: 0;
-//   overflow-y: scroll;
-//   z-index: 999;
-//   background-color: rgba(23, 26, 36, 0.2);
-//   transition: opacity var(--time) var(--timing-function),
-//     visibility var(--time) var(--timing-function);
-// }
-// .header__backdrop {
-//   &.is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-//   }
-// }
-
-// .is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
 // ---------------------------Hero---------------------------
 
 .header-hero {
