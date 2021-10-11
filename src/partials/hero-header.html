@@ -27,7 +27,7 @@
         </li>
       </ul>
     <button class="header__menu js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="header__menu-icon" aria-label="Переключатель мобильного меню"
+      <svg class="header__menu-icon" id="headerMenuIcon" aria-label="Переключатель мобильного меню"
       
       width="20"
       height="12">
@@ -37,7 +37,7 @@
     </button>
     </nav>
     </div>
-    <button class="hero__button-type" type="button">
+    <button class="hero__button-type js-open-modal" data-modal="9" type="button" id="headerBuyButton">
       Buy now
       <svg class="header__icon-right"
       width="8"
@@ -49,7 +49,7 @@
             <!------------------------ HERO  -------------------------->
           <div class="header-hero__substraite">
             <div class="header-hero__text-block">
-              <h1 class="header-hero__title section-title">ice cream <br> made with <br><span
+              <h1 class="header-hero__title section-title wow bounceInLeft animated" data-wow-duration="1.5s">ice cream <br> made with <br><span
                   class="header-hero__textcolor">passion</span></h1>
               <button type="button" class="header-hero__button-red">Products</button>
               <button type="button" class="header-hero__button-white">How it's made?</button>
@@ -75,6 +75,13 @@
               </svg>
             </button>
           </div>
+          <img src="./images/favicon/hero-ice-girl-336px_cloud.png" alt="cloud"
+
+          srcset=" ./images/favicon/hero-ice-girl-336px_cloud.png 336w,
+                  ./images/favicon/hero-ice-girl-586px__cloud.png 586w"
+
+
+                  sizes="(min-width: 1280px) 23vw, (min-width: 768px) 22vw" class="header-hero__ice-girl-cloud">
           <img src="./images/favicon/hero-ice-girl-168px.png" alt="girl with ice-cream" srcset="
                   ./images/favicon/hero-ice-girl-168px.png 168w,
                   ./images/favicon/hero-ice-girl-336px.png 336w,
@@ -96,9 +103,9 @@
                 <use class="menu-icon-close" href="././images/sprite.svg#icon-close"></use>
               </svg>
             </button>
-            <button class="header__mobilemenu-button" type="button">
-              <span class="button__text">Buy now</span>
-              <svg width="8" height="11" class="hero__button-icon button__icon ">
+            <button class="header__mobilemenu-button js-open-modal" data-modal="9" type="button">
+              <span class="">Buy now</span>
+              <svg width="8" height="11" class="header__icon-right">
                 <use href="././images/sprite.svg#icon-button"> </use>
               </svg>
             </button>
@@ -121,4 +128,59 @@
               </li>
             </ul>
           </div>
+          
+          <div class="hero-modal modal" data-modal="9">
+            <button type="button" class="hero-modal__open js-modal-close">
+              <svg class="hero-modal__open-modal">
+                <use class="hero-modal__icon-close" href="././images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <form action="#" class="hero-modal__form">
+              <p class="hero-modal__text">Make an order</p>
+              <div class="hero-modal-form__field">
+                <label for="input-name" class="hero-modal-form__label">Name</label>
+                <span class="hero-modal-form__input-wrap">
+                  <input type="text" id="input-name" class="hero-modal-form__input" name="user-name" />
+                  <svg class="hero-modal-form__icon">
+                    <use class="hero-modal-form__person" href="././images/sprite.svg#icon-person"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="hero-modal-form__field">
+                <label for="input-tel" class="hero-modal-form__label">Mobile number</label>
+                <span class="hero-modal-form__input-wrap">
+                  <input type="tel" id="input-tel" class="hero-modal-form__input" name="user-tel" />
+                  <svg class="hero-modal-form__icon">
+                    <use class="hero-modal-form__phone" href="././images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="hero-modal-form__field">
+                <label for="input-email" class="hero-modal-form__label">E-mail</label>
+                <span class="hero-modal-form__input-wrap">
+                  <input type="email" id="input-email" class="hero-modal-form__input" name="user-email" />
+                  <svg class="hero-modal-form__icon">
+                    <use class="hero-modal-form__email" href="././images/sprite.svg#icon-email"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="hero-modal-form__field">
+                <label for="comment" class="hero-modal-form__label">Comments and proposition</label>
+                <textarea name="hero-modal-comment" id="comment" placeholder="Input text" class="hero-modal__comment"></textarea>
+              </div>
+              <div class="hero-modal-form-checkbox">
+                <input type="checkbox" id="check" name="policy" class="hero-modal-form-checkbox__checkbox" />
+                <label for="check" class="hero-modal-form-checkbox__check">
+                  <span class="hero-modal-form-checkbox__icon-check">
+                    <svg class="hero-modal-form-checkbox__modal-icon-check" width="11" height="8">
+                      <use class="hero-modal-check" href="././images/sprite.svg#icon-vector"></use>
+                    </svg>
+                  </span>
+                  I am buying
+                  <a href="" class="hero-modal-form-checkbox__check-contract">testy ice-cream</a></label>
+              </div>
+              <button type="submit" class="hero-modal__button-submit">Submite</button>
+            </form>
+          </div>
+      
  </header>
