@@ -46,11 +46,23 @@
     </div>
   </div>
 
-  <div class="modal" data-modal="7">
+  <div class="modal about__modal" data-modal="7">
     <button type="button" class="modal__cross js-modal-close">
       <svg class="modal__cross__icon" width="15" height="15">
         <use href="././images/sprite.svg#icon-close"></use>
       </svg>
     </button>
+    <div class="about__modal-block">
+      <picture>
+        <source srcset="././images/about/about-desc-1x.png 1x, ././images/about/about-desc-2x.png 2x"
+          media="(min-width:1280px)" />
+        <source srcset="././images/about/about-tab-1x.png 1x, ././images/about/about-tab-2x.png 2x"
+          media="(min-width:768px)" />
+        <source srcset="././images/about/about-mob-1x.png 1x, ././images/about/about-mob-2x.png 2x"
+          media="(min-width:480px)" />
+        <img src="././images/about/about-desc-1x.png" alt="Корова и молоко" />
+      </picture>
+      <p class="about__modal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima possimus debitis ducimus ratione labore rerum magnam nostrum fuga maiores veniam similique omnis commodi laborum illum repellendus, libero consequuntur quidem natus exercitationem. Animi dolorum eos saepe suscipit illum voluptas perspiciatis nulla pariatur dicta dolore, iure dolor obcaecati commodi veritatis quas quidem.</p>
+    </div>
   </div>
 </section>
