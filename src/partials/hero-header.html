@@ -2,9 +2,11 @@
       <div class="header-hero__container container">
         <div class="header__thumb">
           <a class="header__logo link" href="">
+    <div class="header__logo-icon-thumb">
             <svg class="header__logo-icon"> 
         <use href="././images/sprite.svg#icon-logo"> 
       </svg>
+    </div>
       <span class="header__logotip">icecream</span>
       </a>
       <div class="header__substrate">
@@ -142,38 +144,39 @@
             <form action="#" class="hero-modal__form">
               <p class="hero-modal__text">Make an order</p>
               <div class="hero-modal-form__field">
-                <label for="input-name" class="hero-modal-form__label">Name</label>
                 <span class="hero-modal-form__input-wrap">
-                  <input type="text" id="input-name" class="hero-modal-form__input" name="user-name" />
+                  <input type="text" id="input-name" class="hero-modal-form__input" name="user-name" placeholder="Jack Dark"/>
+                  <label for="input-name" class="hero-modal-form__label">Name</label>
                   <svg class="hero-modal-form__icon">
                     <use class="hero-modal-form__person" href="././images/sprite.svg#icon-person"></use>
                   </svg>
                 </span>
               </div>
               <div class="hero-modal-form__field">
-                <label for="input-tel" class="hero-modal-form__label">Mobile number</label>
                 <span class="hero-modal-form__input-wrap">
-                  <input type="tel" id="input-tel" class="hero-modal-form__input" name="user-tel" />
+                  <input type="tel" id="input-tel" class="hero-modal-form__input" name="user-tel" placeholder="+380 ** *** ***" />
+                  <label for="input-tel" class="hero-modal-form__label">Mobile number</label>
                   <svg class="hero-modal-form__icon">
                     <use class="hero-modal-form__phone" href="././images/sprite.svg#icon-phone"></use>
                   </svg>
                 </span>
               </div>
               <div class="hero-modal-form__field">
-                <label for="input-email" class="hero-modal-form__label">E-mail</label>
                 <span class="hero-modal-form__input-wrap">
-                  <input type="email" id="input-email" class="hero-modal-form__input" name="user-email" />
+                  <input type="email" id="input-email" class="hero-modal-form__input" name="user-email" placeholder="css@gmail.com" />
+                  <label for="input-email" class="hero-modal-form__label">E-mail</label>
                   <svg class="hero-modal-form__icon">
                     <use class="hero-modal-form__email" href="././images/sprite.svg#icon-email"></use>
                   </svg>
                 </span>
               </div>
               <div class="hero-modal-form__field">
-                <label for="comment" class="hero-modal-form__label">Comments and proposition</label>
-                <textarea name="hero-modal-comment" id="comment" placeholder="Input text" class="hero-modal__comment"></textarea>
+                <textarea name="hero-modal-comment" id="comment" placeholder="Jane" class="hero-modal__comment"></textarea>
+                <label for="comment" class="hero-modal-form__label" placeholder="Jane Appleseed">Comments and proposition</label>
               </div>
               <div class="hero-modal-form-checkbox">
                 <input type="checkbox" id="check" name="policy" class="hero-modal-form-checkbox__checkbox" />
+                
                 <label for="check" class="hero-modal-form-checkbox__check">
                   <span class="hero-modal-form-checkbox__icon-check">
                     <svg class="hero-modal-form-checkbox__modal-icon-check" width="11" height="8">
