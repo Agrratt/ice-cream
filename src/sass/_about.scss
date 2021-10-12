@@ -71,14 +71,20 @@ img {
 
 .about__text {
   max-width: 220px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 46px;
 
   @media screen and (min-width: 768px) {
     max-width: 340px;
+    margin: 0;
+    padding-left: 17px;
+    margin-top: 100px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 463px;
+    padding-left: 74px;
+    margin-top: 106px;
   }
 }
 
@@ -87,18 +93,15 @@ img {
   font-size: 12px;
   line-height: 1.62;
   color: var(--second-text-color);
-  margin-top: 46px;
   margin-bottom: 31px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
-    margin-top: 100px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
-    margin-top: 106px;
     margin-bottom: 35px;
   }
 }
@@ -158,17 +161,14 @@ img {
   font-size: 12px;
   line-height: 1.62;
   color: var(--primary-text-color);
-  margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
-    margin-bottom: 15px;
     max-width: 340px;
   }
 
   @media screen and (min-width: 1280px) {
     line-height: 1.94;
-    margin-bottom: 25px;
   }
 }
