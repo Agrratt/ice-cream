@@ -1,193 +1,258 @@
 <header class="header">
-      <div class="header-hero__container container">
-        <div class="header__thumb">
-          <a class="header__logo link" href="">
-    <div class="header__logo-icon-thumb">
-            <svg class="header__logo-icon"> 
-        <use href="././images/sprite.svg#icon-logo"></use>
-      </svg>
-    </div>
-      <span class="header__logotip">icecream</span>
+  <div class="header-hero__container container">
+    <div class="header__thumb">
+      <a class="header__logo link" href="">
+        <div class="header__logo-icon-thumb">
+          <svg class="header__logo-icon">
+            <use href="././images/sprite.svg#icon-logo"></use>
+          </svg>
+        </div>
+        <span class="header__logotip">icecream</span>
       </a>
       <div class="header__substrate">
-    <nav class="header__navigation">
-      <ul class="header__list list">
-        <li class="header__item">
-          <a class="header__link--home link" href="">Home</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link link scrollto" href="#advantages">About us</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link link scrollto" href="#about">How it’s made?</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link link scrollto" href="#products">Our products</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link link scrollto" href="#contacts">Contact</a>
-        </li>
-      </ul>
-    <button class="header__menu js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="header__menu-icon" id="headerMenuIcon" aria-label="Переключатель мобильного меню"
-      
-      width="20"
-      height="12">
+        <nav class="header__navigation">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link--home link" href="">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link scrollto" href="#advantages">About us</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link scrollto" href="#about">How it’s made?</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link scrollto" href="#products">Our products</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link scrollto" href="#contacts">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="header__menu js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="header__menu-icon"
+              id="headerMenuIcon"
+              aria-label="Переключатель мобильного меню"
+              width="20"
+              height="12"
+            >
+              <use href="./images/sprite.svg#icon-burgernew-new"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <button
+        class="hero__button-type js-open-modal"
+        data-modal="9"
+        type="button"
+        id="headerBuyButton"
+      >
+        Buy now
+        <svg class="header__icon-right" width="8" height="11">
+          <use href="./images/sprite.svg#icon-button"></use>
+        </svg>
+      </button>
+    </div>
+    <!------------------------ HERO  -------------------------->
+    <div class="header-hero__substraite">
+      <div class="header-hero__text-block">
+        <h1
+          class="header-hero__title section-title wow bounceInLeft animated"
+          data-wow-duration="1.5s"
+        >
+          ice cream <br />
+          made with <br /><span class="header-hero__textcolor">passion</span>
+        </h1>
 
-          <use href="./images/sprite.svg#icon-burgernew-new"></use>
+        <a class="header-hero__button-red scrollto link" href="#products">Products</a>
+
+        <a class="header-hero__button-white scrollto link" href="#about">How it's made?</a>
+      </div>
+    </div>
+    <img
+      alt="ice-cream"
+      class="header-hero__image"
+      src="./images/favicon/hero-ice-cream-171px.png"
+      srcset="
+        ./images/favicon/hero-ice-cream-171px.png 171w,
+        ./images/favicon/hero-ice-cream-342px.png 342w,
+        ./images/favicon/hero-ice-cream-472px.png 472w
+      "
+      sizes="(min-width: 1280px) 20vw, (min-width: 768px) 20vw, (max-width: 767px) 40vw"
+    />
+    <div class="header-hero__thumb">
+      <img
+        src="./images/favicon/milk-cont-124px.png"
+        alt="container with milk"
+        class="header-hero__milk-img"
+        srcset="
+          ./images/favicon/milk-cont-124px.png 124w,
+          ./images/favicon/milk-cont-248px.png 248w,
+          ./images/favicon/milk-cont-376px.png 376w
+        "
+        sizes="(min-width: 1280px) 15vw, (min-width: 768px) 16vw"
+      />
+      <span class="header-hero__milk-text"
+        >Lorem ipsum dolor sit amet, <br />
+        consectetur adipiscing elit, <br />
+        sed do eiusmod tempor <br />
+        incididunt ut labore et</span
+      >
+      <button class="header-hero__button js-open-modal" data-modal="6" type="button">
+        <svg class="header-hero__icon">
+          <use class="products__svg" href="././images/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <img
+      src="./images/favicon/hero-ice-girl-336px_cloud.png"
+      alt="cloud"
+      srcset="
+        ./images/favicon/hero-ice-girl-336px_cloud.png  336w,
+        ./images/favicon/hero-ice-girl-586px__cloud.png 586w
+      "
+      sizes="(min-width: 1280px) 23vw, (min-width: 768px) 22vw"
+      class="header-hero__ice-girl-cloud"
+    />
+    <img
+      src="./images/favicon/hero-ice-girl-168px.png"
+      alt="girl with ice-cream"
+      srcset="
+        ./images/favicon/hero-ice-girl-168px.png 168w,
+        ./images/favicon/hero-ice-girl-336px.png 336w,
+        ./images/favicon/hero-ice-girl-586px.png 586w
+      "
+      sizes="(min-width: 1280px) 23vw, (min-width: 768px) 22vw"
+      class="header-hero__ice-girl"
+    />
+    <div class="header-hero__right--first">
+      16
+      <span class="header-hero__text--first">cafes</span>
+    </div>
+    <div class="header-hero__right--second">
+      23
+      <span class="header-hero__text--second">food&nbsp;tracks</span>
+    </div>
+  </div>
+  <!-------------------- MODAL -------------------->
+  <div class="header__mobilemenu js-menu-container" id="mobile-menu">
+    <button type="button" class="header__mobilemenu-close js-close-menu">
+      <svg
+        width="14"
+        height="14"
+        class="header__mobilemenu-icon"
+        aria-label="Переключатель мобильного меню"
+      >
+        <use class="menu-icon-close" href="././images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    </nav>
-    </div>
-    <button class="hero__button-type js-open-modal" data-modal="9" type="button" id="headerBuyButton">
-      Buy now
-      <svg class="header__icon-right"
-      width="8"
-      height="11">
-        <use href="./images/sprite.svg#icon-button"></use>
+    <button class="header__mobilemenu-button js-open-modal" data-modal="9" type="button">
+      <span class="">Buy now</span>
+      <svg width="8" height="11" class="header__icon-right">
+        <use href="././images/sprite.svg#icon-button"></use>
       </svg>
     </button>
-    </div>
-            <!------------------------ HERO  -------------------------->
-          <div class="header-hero__substraite">
-            <div class="header-hero__text-block">
-              <h1 class="header-hero__title section-title wow bounceInLeft animated" data-wow-duration="1.5s">ice cream <br> made with <br><span
-                  class="header-hero__textcolor">passion</span></h1>
-            
-              <a class="header-hero__button-red scrollto link" href="#products">Products</a>
-        
-              
-              <a class="header-hero__button-white scrollto link" href="#about">How it's made?</a>
-            
-            </div>
-          </div>
-          <img alt="ice-cream" class="header-hero__image" src="./images/favicon/hero-ice-cream-171px.png" srcset="
 
-                  ./images/favicon/hero-ice-cream-171px.png 171w, 
-                  ./images/favicon/hero-ice-cream-342px.png 342w,
-                  ./images/favicon/hero-ice-cream-472px.png 472w
+    <ul class="header__mobilemenu-list list">
+      <li class="header__mobilemenu-item">
+        <a class="header__mobilemenu-link link" href="">Home</a>
+      </li>
+      <li class="header__mobilemenu-item">
+        <a class="header__mobilemenu-link link scrollto" href="#advantages">About us</a>
+      </li>
+      <li class="header__mobilemenu-item">
+        <a class="header__mobilemenu-link link scrollto" href="#about">How it’s made?</a>
+      </li>
+      <li class="header__mobilemenu-item">
+        <a class="header__mobilemenu-link link scrollto" href="#products">Our products</a>
+      </li>
+      <li class="header__mobilemenu-item">
+        <a class="header__mobilemenu-link link scrollto" href="#contacts">Contact</a>
+      </li>
+    </ul>
+  </div>
 
-                  " sizes="(min-width: 1280px) 20vw, (min-width: 768px) 20vw, (max-width: 767px) 40vw">
-          <div class="header-hero__thumb">
-            <img src="./images/favicon/milk-cont-124px.png" alt="container with milk" class="header-hero__milk-img" srcset="
-                      ./images/favicon/milk-cont-124px.png 124w,
-                      ./images/favicon/milk-cont-248px.png 248w,
-                      ./images/favicon/milk-cont-376px.png 376w" sizes="(min-width: 1280px) 15vw, (min-width: 768px) 16vw">
-            <span class="header-hero__milk-text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod
-              tempor <br> incididunt ut labore et</span>
-            <button class="header-hero__button js-open-modal" data-modal="6" type="button">
-              <svg class="header-hero__icon">
-                <use class="products__svg" href="././images/sprite.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
-          </div>
-          <img src="./images/favicon/hero-ice-girl-336px_cloud.png" alt="cloud"
+  <div class="hero-modal modal" data-modal="9">
+    <button type="button" class="hero-modal__open js-modal-close">
+      <svg class="hero-modal__open-modal">
+        <use class="hero-modal__icon-close" href="././images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form action="#" class="hero-modal__form">
+      <p class="hero-modal__text">Make an order</p>
+      <div class="hero-modal-form__field">
+        <span class="hero-modal-form__input-wrap">
+          <input
+            type="text"
+            id="input-name"
+            class="hero-modal-form__input"
+            name="user-name"
+            placeholder="Jack Dark"
+          />
+          <label for="input-name" class="hero-modal-form__label">Name</label>
+          <svg class="hero-modal-form__icon">
+            <use class="hero-modal-form__person" href="././images/sprite.svg#icon-person"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="hero-modal-form__field">
+        <span class="hero-modal-form__input-wrap">
+          <input
+            type="tel"
+            id="input-tel"
+            class="hero-modal-form__input"
+            name="user-tel"
+            placeholder="+380 ** *** ***"
+          />
+          <label for="input-tel" class="hero-modal-form__label">Mobile number</label>
+          <svg class="hero-modal-form__icon">
+            <use class="hero-modal-form__phone" href="././images/sprite.svg#icon-phone"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="hero-modal-form__field">
+        <span class="hero-modal-form__input-wrap">
+          <input
+            type="email"
+            id="input-email"
+            class="hero-modal-form__input"
+            name="user-email"
+            placeholder="css@gmail.com"
+          />
+          <label for="input-email" class="hero-modal-form__label">E-mail</label>
+          <svg class="hero-modal-form__icon">
+            <use class="hero-modal-form__email" href="././images/sprite.svg#icon-email"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="hero-modal-form__field">
+        <textarea name="hero-modal-comment" id="comment" class="hero-modal__comment"></textarea>
+        <label for="comment" class="hero-modal-form__label">Comments and proposition</label>
+      </div>
+      <div class="hero-modal-form-checkbox">
+        <input
+          type="checkbox"
+          id="check"
+          name="policy"
+          class="hero-modal-form-checkbox__checkbox"
+        />
 
-          srcset=" ./images/favicon/hero-ice-girl-336px_cloud.png 336w,
-                  ./images/favicon/hero-ice-girl-586px__cloud.png 586w"
-
-
-                  sizes="(min-width: 1280px) 23vw, (min-width: 768px) 22vw" class="header-hero__ice-girl-cloud">
-          <img src="./images/favicon/hero-ice-girl-168px.png" alt="girl with ice-cream" srcset="
-                  ./images/favicon/hero-ice-girl-168px.png 168w,
-                  ./images/favicon/hero-ice-girl-336px.png 336w,
-                  ./images/favicon/hero-ice-girl-586px.png 586w" sizes="(min-width: 1280px) 23vw, (min-width: 768px) 22vw"
-            class="header-hero__ice-girl">
-          <div class="header-hero__right--first">
-            16
-            <span class="header-hero__text--first">cafes</span>
-          </div>
-          <div class="header-hero__right--second">
-            23
-            <span class="header-hero__text--second">food&nbsptracks</span>
-          </div>
-         </div>
-        <!-------------------- MODAL -------------------->
-          <div class="header__mobilemenu js-menu-container" id="mobile-menu">
-            <button type="button" class="header__mobilemenu-close js-close-menu">
-              <svg width="14" height="14" class="header__mobilemenu-icon" aria-label="Переключатель мобильного меню">
-                <use class="menu-icon-close" href="././images/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-            <button class="header__mobilemenu-button js-open-modal" data-modal="9" type="button">
-              <span class="">Buy now</span>
-              <svg width="8" height="11" class="header__icon-right">
-                <use href="././images/sprite.svg#icon-button"> </use>
-              </svg>
-            </button>
-          
-            <ul class="header__mobilemenu-list list">
-              <li class="header__mobilemenu-item">
-                <a class="header__mobilemenu-link link" href="">Home</a>
-              </li>
-              <li class="header__mobilemenu-item">
-                <a class="header__mobilemenu-link link scrollto" href="#advantages">About us</a>
-              </li>
-              <li class="header__mobilemenu-item">
-                <a class="header__mobilemenu-link link scrollto" href="#about">How it’s made?</a>
-              </li>
-              <li class="header__mobilemenu-item">
-                <a class="header__mobilemenu-link link scrollto" href="#products">Our products</a>
-              </li>
-              <li class="header__mobilemenu-item">
-                <a class="header__mobilemenu-link link scrollto" href="#contacts">Contact</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="hero-modal modal" data-modal="9">
-            <button type="button" class="hero-modal__open js-modal-close">
-              <svg class="hero-modal__open-modal">
-                <use class="hero-modal__icon-close" href="././images/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-            <form action="#" class="hero-modal__form">
-              <p class="hero-modal__text">Make an order</p>
-              <div class="hero-modal-form__field">
-                <span class="hero-modal-form__input-wrap">
-                  <input type="text" id="input-name" class="hero-modal-form__input" name="user-name" placeholder="Jack Dark"/>
-                  <label for="input-name" class="hero-modal-form__label">Name</label>
-                  <svg class="hero-modal-form__icon">
-                    <use class="hero-modal-form__person" href="././images/sprite.svg#icon-person"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="hero-modal-form__field">
-                <span class="hero-modal-form__input-wrap">
-                  <input type="tel" id="input-tel" class="hero-modal-form__input" name="user-tel" placeholder="+380 ** *** ***" />
-                  <label for="input-tel" class="hero-modal-form__label">Mobile number</label>
-                  <svg class="hero-modal-form__icon">
-                    <use class="hero-modal-form__phone" href="././images/sprite.svg#icon-phone"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="hero-modal-form__field">
-                <span class="hero-modal-form__input-wrap">
-                  <input type="email" id="input-email" class="hero-modal-form__input" name="user-email" placeholder="css@gmail.com" />
-                  <label for="input-email" class="hero-modal-form__label">E-mail</label>
-                  <svg class="hero-modal-form__icon">
-                    <use class="hero-modal-form__email" href="././images/sprite.svg#icon-email"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="hero-modal-form__field">
-                <textarea name="hero-modal-comment" id="comment" class="hero-modal__comment"></textarea>
-                <label for="comment" class="hero-modal-form__label">Comments and proposition</label>
-              </div>
-              <div class="hero-modal-form-checkbox">
-                <input type="checkbox" id="check" name="policy" class="hero-modal-form-checkbox__checkbox" />
-                
-                <label for="check" class="hero-modal-form-checkbox__check">
-                  <span class="hero-modal-form-checkbox__icon-check">
-                    <svg class="hero-modal-form-checkbox__modal-icon-check" width="11" height="8">
-                      <use class="hero-modal-check" href="././images/sprite.svg#icon-vector"></use>
-                    </svg>
-                  </span>
-                  I am buying
-                  <a href="" class="hero-modal-form-checkbox__check-contract">testy ice-cream</a></label>
-              </div>
-              <button type="submit" class="hero-modal__button-submit">Submite</button>
-            </form>
-          </div>
-      
- </header>
+        <label for="check" class="hero-modal-form-checkbox__check">
+          <span class="hero-modal-form-checkbox__icon-check">
+            <svg class="hero-modal-form-checkbox__modal-icon-check" width="11" height="8">
+              <use class="hero-modal-check" href="././images/sprite.svg#icon-vector"></use>
+            </svg>
+          </span>
+          I am buying
+          <a href="" class="hero-modal-form-checkbox__check-contract">testy ice-cream</a></label
+        >
+      </div>
+      <button type="submit" class="hero-modal__button-submit">Submite</button>
+    </form>
+  </div>
+</header>
