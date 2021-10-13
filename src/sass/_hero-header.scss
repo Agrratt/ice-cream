@@ -431,9 +431,14 @@
   }
 
   &__title {
+    margin-bottom: 20px;
     font-size: 26px;
     text-align: left;
     color: #fff;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 25px;
+    }
   }
 
   &__image {
